@@ -1,0 +1,8 @@
+RewriteEngine On
+
+# Redirect root domain to portfolio page
+RewriteCond %{HTTP_HOST} ^yanpich\.com$ [NC]
+RewriteRule ^/?$ /portfolio [R=301,L]
+
+# Optional: keep /portfolio accessible normally
+# RewriteRule ^portfolio$ /portfolio [L]
